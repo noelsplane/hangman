@@ -1,5 +1,5 @@
 # Hangman HW
- Fun to hangman game made with React
+ Fun hangman game made with React
 
 ## Available Scripts
 
