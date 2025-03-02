@@ -8,7 +8,7 @@ const words = ["Morehouse", "Spelman", "Basketball", "Table", "Museum", "Excelle
 
 class HangmanGame extends React.Component {
   state = {
-    curWord: words[Math.floor(Math.random() * words.length)].toUpperCase(), // Store actual word
+    curWord: words[Math.floor(Math.random() * words.length)].toUpperCase(), 
     lifeLeft: 6,
     usedLetters: [],
     revealedWord: [],
@@ -18,9 +18,9 @@ class HangmanGame extends React.Component {
 
   startNewGame = () => {
     const newWord = words[Math.floor(Math.random() * words.length)];
-    console.log("New Word Selected:", newWord, "Type:", typeof newWord); // Debugging Line
+    console.log("New Word Selected:", newWord, "Type:", typeof newWord); 
     this.setState({
-      curWord: newWord.toUpperCase(),  // Ensure it's a string
+      curWord: newWord.toUpperCase(), 
       lifeLeft: 6,
       usedLetters: [],
       revealedWord: Array(newWord.length).fill('_'),
